@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+a.headlink.nav-link,
+a.headlink.nav-link:link,
+a.headlink.nav-link:visited {
+  color: #e84545;
+  border-radius: 10px;
+  margin: 2px;
+}
+a.headlink.nav-link:hover {
+  color: #903749;
+  background-color: #e84545;
+  border-radius: 10px;
+  /* border-bottom: 2px solid #903749; */
+}
+.navbar {
+  border-bottom: 2px solid #2b2e4a;
+  padding: 1.5em;
+  padding-right: 20px;
+}
+.nav-item {
+  /* border-left: 2px solid #2b2e4a; */
+}
+.navbar-brand h3 {
+  color: #e84545;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 426px) {
+  .nav-item {
+    border-left: 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer {
+  background-color: #2b2e4a;
+}
+
+.footcol {
+  padding: 2em;
+  background-color: #2b2e4a;
   color: white;
+  border-right: 1px outset #e84545;
 }
 
-.App-link {
-  color: #61dafb;
+.footcol h1,
+.footcol h2,
+.footcol p {
+  color: #e84545;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footcol h2 {
+  padding-left: 35px;
+}
+.footcol .mail {
+  padding-left: 3em;
+}
+
+.footcol a {
+  color: #e84545;
+  padding: 0 10px 0;
+}
+
+.footcol a:hover {
+  color: #903749;
+}
+
+.footcol p {
+  padding-left: 3em;
+  padding-top: 10px;
+}
+
+.footcol i {
+  padding: 0.3em;
+  padding-top: 20px;
+}
+
+a.footlink,
+a.footlink:link,
+a.footlink:visited {
+  padding: 0.8em 3.5em 0;
+  color: #e84545;
+}
+a.footlink:hover {
+  color: #903749;
 }

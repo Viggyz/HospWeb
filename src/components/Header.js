@@ -16,11 +16,11 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <div>
-        <Navbar color="faded" expand="md" light>
+      <div className="header">
+        <Navbar color="light" expand="md" light className="fixed-top ">
           <div className="container-fluid">
             <NavbarBrand tag={Link} to="/" className="col">
-              <h3 className="fas fa-heartbeat fa-lg">WeCare</h3>
+              <h3 className="fas fa-heartbeat fa-lg"> WeCare</h3>
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar className="justify-content-end">

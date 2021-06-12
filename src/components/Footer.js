@@ -1,11 +1,11 @@
 import React from "react";
-import { Nav, NavLink } from "reactstrap";
+import { Nav, NavLink, Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="container-fluid footer">
-      <div className="row">
+    <Container className="footer" fluid="true">
+      <Row>
         <div className="col-lg-6 col-sm-12 footcol">
           <div className="container">
             <h1 className="fas fa-heartbeat fa-2x">WeCare</h1>
@@ -35,7 +35,7 @@ export default function Footer() {
             <a href="#" class="fab fa-instagram-square fa-lg"></a>
           </p>
         </div>
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 }

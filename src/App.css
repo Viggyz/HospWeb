@@ -4,21 +4,22 @@ a.headlink.nav-link:visited {
   color: #e84545;
   border-radius: 10px;
   margin: 2px;
+  font-weight: 400;
 }
 a.headlink.nav-link:hover {
   color: #903749;
-  background-color: #e84545;
+  /*color not showing fix this*/
+  /* background-color: #e84545; */
   border-radius: 10px;
   /* border-bottom: 2px solid #903749; */
 }
+
 .navbar {
-  border-bottom: 2px solid #2b2e4a;
+  /* border-bottom: 2px solid #2b2e4a; */
   padding: 1.5em;
   padding-right: 20px;
 }
-.nav-item {
-  /* border-left: 2px solid #2b2e4a; */
-}
+
 .navbar-brand h3 {
   color: #e84545;
 }
@@ -30,6 +31,12 @@ a.headlink.nav-link:hover {
 }
 
 .footer {
+  position: absolute;
+  margin: 0px;
+  left: 0;
+  right: 0;
+  margin: 5% 0;
+  padding: 2% 0 0 0;
   background-color: #2b2e4a;
 }
 
@@ -41,13 +48,14 @@ a.headlink.nav-link:hover {
 }
 
 .footcol h1,
-.footcol h2,
 .footcol p {
+  padding-left: 0.5em;
   color: #e84545;
 }
 
 .footcol h2 {
   padding-left: 35px;
+  color: #e84545;
 }
 .footcol .mail {
   padding-left: 3em;
@@ -80,4 +88,20 @@ a.footlink:visited {
 }
 a.footlink:hover {
   color: #903749;
+}
+
+/* home */
+.home {
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  padding: 1em;
+}
+
+.error-btn {
+  background-color: #e84545;
+  border-radius: 12px;
+  color: white;
 }

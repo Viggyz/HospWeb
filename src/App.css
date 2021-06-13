@@ -109,7 +109,7 @@ a.footlink:hover {
 
 .d1 h3 {
   text-align: start;
-  color: wheat;
+  color: #2b2e4a;
 }
 .d1 h1,
 .d1 p {
@@ -197,17 +197,10 @@ div.card-body {
   text-align: justify;
 }
 
-.navbar-custom .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
-}
-
 .navbar-toggler {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(232,69,69, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
     no-repeat center center;
-  border-color: #e84545;
-  border: 1px solid;
 }
 .navbar-toggler-icon {
-  display: none;
   opacity: 0;
 }

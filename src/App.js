@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className="container-fluid">
-        <div className="row mb-5">
+        <div className="row my-5">
           <Header />
         </div>
         <div className="row py-15 my-15">
@@ -35,7 +35,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <div className="row mt-3 pt-3">
+        <div className="row">
           <Footer />
         </div>
       </div>

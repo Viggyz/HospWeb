@@ -22,17 +22,17 @@ export default function Footer() {
             </Nav>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12 footcol">
+        <div className="col-lg-6 col-sm-12 footcol">
           <h2>Contact</h2>
           <a href="mailto:viggy@doesnt.com" className="mail">
             viggy@doesntexist.com
           </a>
           <p>+54 1234567</p>
           <p>
-            <a href="#" class="fab fa-linkedin fa-lg"></a>
-            <a href="#" class="fab fa-facebook-square fa-lg"></a>
-            <a href="#" class="fab fa-twitter-square fa-lg"></a>
-            <a href="#" class="fab fa-instagram-square fa-lg"></a>
+            <a href="#" className="fab fa-linkedin fa-lg"></a>
+            <a href="#" className="fab fa-facebook-square fa-lg"></a>
+            <a href="#" className="fab fa-twitter-square fa-lg"></a>
+            <a href="#" className="fab fa-instagram-square fa-lg"></a>
           </p>
         </div>
       </Row>

@@ -7,7 +7,7 @@ a.headlink.nav-link:visited {
   font-weight: 400;
 }
 a.headlink.nav-link:hover {
-  color: #903749;
+  color: white;
   /*color not showing fix this*/
   /* background-color: #e84545; */
   border-radius: 10px;
@@ -31,12 +31,11 @@ a.headlink.nav-link:hover {
 }
 
 .footer {
-  position: absolute;
-  margin: 0px;
+  /* bottom: 0;
   left: 0;
-  right: 0;
-  margin: 5% 0;
-  padding: 2% 0 0 0;
+  right: 0; */
+  margin: 1% 0 0 0;
+  /* padding: 1% 0 0 0; */
   background-color: #2b2e4a;
 }
 
@@ -104,4 +103,49 @@ a.footlink:hover {
   background-color: #e84545;
   border-radius: 12px;
   color: white;
+}
+
+.d1 h3 {
+  text-align: start;
+  color: wheat;
+}
+.d1 h1,
+.d1 p {
+  color: white;
+}
+.d2 {
+  text-align: center;
+  align-self: center;
+  color: white;
+}
+
+.info {
+  background-color: #e84545;
+}
+
+button.btn,
+button.btn:active,
+button.btn:focus,
+button.btn:hover {
+  background-color: #2b2e4a;
+  margin: 5px;
+}
+
+button.btn span {
+  opacity: 0;
+}
+button.btn:hover span {
+  opacity: 1;
+  transition: 0.5s;
+}
+.testcol {
+  text-align: center;
+  background-color: #2b2e4a;
+  color: white;
+}
+
+@media only screen and (max-width: 426px) {
+  .testimg i {
+    display: none;
+  }
 }

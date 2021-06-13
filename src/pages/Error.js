@@ -8,8 +8,8 @@ export default function Error() {
     <div className="container ">
       <div className="row error">
         <h3>Looks like you're lost, let us help you</h3>
-        <img src={Img} alt="404 not found" width="200vw" height="300vh" />
-        <NavLink tag={Link} to="/" className="error-btn text-white">
+        <img src={Img} alt="404 not found" width="300vw" height="300vh" />
+        <NavLink tag={Link} to="/" className="error-btn text-white mt-3">
           Go back Home
         </NavLink>
       </div>

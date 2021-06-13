@@ -59,7 +59,6 @@ function Product() {
                       width="100%"
                       src={chair.img}
                       alt="Card image cap"
-                      width="100%"
                       height="100%"
                     />
                     <CardBody>

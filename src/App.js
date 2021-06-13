@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router";
 
 import Home from "./pages/Homepage";
-import About from "./pages/About";
+import Faq from "./pages/Faq";
 import Product from "./pages/Product";
 import Error from "./pages/Error";
 import ProdSpec from "./pages/ProdSpec";
@@ -24,15 +24,9 @@ function App() {
           {/*Full fix this */}
           <ScrollToTop>
             <Switch>
-              <Route exact path="/" component={Home}>
-                <Home />
-              </Route>
-              <Route path="/about" component={About}>
-                <About />
-              </Route>
-              <Route exact path="/product" component={Product}>
-                <Product />
-              </Route>
+              <Route exact path="/" component={Home} />
+              <Route path="/faq" component={Faq} />
+              <Route exact path="/product" component={Product} />
               <Route path="/product/:id" component={ProdSpec} />
               <Route path="*" component={Error} />
             </Switch>

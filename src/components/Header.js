@@ -42,8 +42,8 @@ const Header = () => {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink tag={Link} to="/about" className="headlink">
-                      About
+                    <NavLink tag={Link} to="/faq" className="headlink">
+                      FAQ
                     </NavLink>
                   </NavItem>
                   <NavItem>

@@ -98,10 +98,13 @@ a.footlink:hover {
   padding: 1em;
 }
 
-.error-btn {
+.btn.error-btn {
   background-color: #e84545;
   border-radius: 12px;
   color: white;
+}
+.btn.error-btn:hover {
+  background-color: #903749;
 }
 
 .d1 h3 {
@@ -162,4 +165,18 @@ button.btn:hover span {
 }
 .btn.back:hover {
   background-color: #903749;
+}
+
+.link2 {
+  color: white;
+  text-decoration: none;
+}
+
+.link2:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.faq {
+  background-color: #e84545;
 }

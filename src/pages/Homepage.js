@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container, Row, Col } from "reactstrap";
 import { Fade, Slide } from "react-reveal";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
 
 import Main from "../images/med_main.svg";
 import Plan from "../images/careplan.svg";
@@ -215,6 +216,11 @@ function Homepage() {
                     <i className="fas fa-dove fa-5x mt-2"></i>
                   </Fade>
                 </Col>
+                <a className="link2" href="#here" id="here">
+                  <h5>
+                    See More <i className="fas fa-arrow-circle-right"></i>
+                  </h5>
+                </a>
               </Row>
             </Container>
           </Col>

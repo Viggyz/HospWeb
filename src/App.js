@@ -7,6 +7,7 @@ import Error from "./pages/Error";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 //ONLY EVER USE YARN
@@ -15,25 +16,27 @@ function App() {
   return (
     <>
       <div className="container-fluid">
-        <div className="row my-5">
+        <div className="row my-3">
           <Header />
         </div>
-        <div className="row py-15 my-15">
+        <div className="row pt-2 mt-5">
           {/*Full fix this */}
-          <Switch>
-            <Route exact path="/" component={Home}>
-              <Home />
-            </Route>
-            <Route path="/about" component={About}>
-              <About />
-            </Route>
-            <Route path="/product" component={Product}>
-              <Product />
-            </Route>
-            <Route path="*" component={Error}>
-              <Error />
-            </Route>
-          </Switch>
+          <ScrollToTop>
+            <Switch>
+              <Route exact path="/" component={Home}>
+                <Home />
+              </Route>
+              <Route path="/about" component={About}>
+                <About />
+              </Route>
+              <Route path="/product" component={Product}>
+                <Product />
+              </Route>
+              <Route path="*" component={Error}>
+                <Error />
+              </Route>
+            </Switch>
+          </ScrollToTop>
         </div>
         <div className="row">
           <Footer />

@@ -1,17 +1,15 @@
-a.headlink.nav-link,
-a.headlink.nav-link:link,
-a.headlink.nav-link:visited {
+.and a.headlink.nav-link,
+.and a.headlink.nav-link:link,
+.and a.headlink.nav-link:visited,
+.and a.headlink.nav-link:active {
   color: #e84545;
-  border-radius: 10px;
   margin: 2px;
   font-weight: 400;
 }
-a.headlink.nav-link:hover {
-  color: white;
-  /*color not showing fix this*/
-  /* background-color: #e84545; */
-  border-radius: 10px;
-  /* border-bottom: 2px solid #903749; */
+.and a.headlink.nav-link:hover {
+  color: #903749;
+  /* transition: 1s; */
+  border-bottom: 3px solid #903749;
 }
 
 .navbar {
@@ -22,6 +20,7 @@ a.headlink.nav-link:hover {
 
 .navbar-brand h3 {
   color: #e84545;
+  border-bottom: #e84545;
 }
 
 @media (max-width: 426px) {
@@ -148,4 +147,12 @@ button.btn:hover span {
   .testimg i {
     display: none;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  color: #e84545;
 }

@@ -24,7 +24,7 @@ const Header = () => {
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar className="justify-content-end">
-              <Nav navbar>
+              <Nav navbar className="and">
                 <NavItem>
                   <NavLink tag={Link} to="/" className="headlink">
                     Home

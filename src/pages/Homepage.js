@@ -71,7 +71,7 @@ function Homepage() {
       <div style={{ padding: "0px" }}>
         <svg viewBox="0 0 500 150" preserveAspectRatio="none">
           <path
-            d="M-0.37,12.99 C87.09,104.76 271.49,-49.99 503.57,38.65 L500.00,0.00 L0.00,0.00 Z"
+            d="M-5.45,36.68 C129.98,107.73 271.49,-49.99 500.00,49.99 L500.00,0.00 L0.00,0.00 Z"
             style={{
               fill: "#e84545",
               width: "100vw",
@@ -98,44 +98,56 @@ function Homepage() {
           <Col className="testcol p-3">
             <h3 className="mb-4">Testimonials</h3>
             <Container>
-              <Row className="py-4">
+              <Row className="pt-4">
                 <Col sm="12" md="6">
-                  <p>
-                    I am very happy and satisfied with Capsule! It has allowed
-                    our clinic to offer the quality and efficient service we aim
-                    to give to our clients. I have come across many other
-                    Medical systems but nothing beats Tendercare
-                  </p>
-                  <h5>Dr. Placeholder</h5>
+                  <blockquote className="blockqote">
+                    <p>
+                      I am very happy and satisfied with Capsule! It has allowed
+                      our clinic to offer the quality and efficient service we
+                      aim to give to our clients. I have come across many other
+                      Medical systems but nothing beats WeCare.
+                    </p>
+                    <footer className="blockquote-footer">
+                      <h6 className="lead text-white">Dr. Placeholder</h6>
+                    </footer>
+                  </blockquote>
                 </Col>
                 <Col sm="12" md="6" className="testimg">
                   <i className="fas fa-feather fa-5x"></i>
                 </Col>
               </Row>
-              <Row className="py-4 justify-content-end">
+              <Row className="pt-4 justify-content-end">
                 <Col sm="12" md="6" className="testimg">
                   <i className="fas fa-horse-head fa-5x"></i>
                 </Col>
                 <Col sm="12" md="6">
-                  <p>
-                    We really love the new site and branding. I think it will
-                    look more sophisticated and very alive... I definitely love
-                    the fresh vibe from that greenery. Looking great!! Well
-                    done.
-                  </p>
-                  <h5>Ms. Gaby</h5>
+                  <blockquote className="blockqote">
+                    <p>
+                      We really love the new site and branding. I think it will
+                      look more sophisticated and very alive... I definitely
+                      love the fresh vibe from that greenery. Looking great!!
+                      Well done.
+                    </p>
+                    <footer className="blockquote-footer">
+                      <h6 className="lead text-white">Ms. Gaby</h6>
+                    </footer>
+                  </blockquote>
                 </Col>
               </Row>
-              <Row className="py-4">
+              <Row className="pt-4">
                 <Col sm="12" md="6">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                  <h5>Mr. Lorem</h5>
+                  <blockquote className="blockqote">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                    <footer className="blockquote-footer">
+                      <h6 className="lead text-white">Mr. Lorem</h6>
+                    </footer>
+                  </blockquote>
                 </Col>
                 <Col sm="12" md="6" className="testimg">
                   <i className="fas fa-dove fa-5x mt-2"></i>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   NavItem,
@@ -8,11 +8,21 @@ import {
   Collapse,
   NavbarToggler,
 } from "reactstrap";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  let CheckFade = ({ children }) => {
+    if (isOpen) return <Fade bottom>{children}</Fade>;
+    else return <>{children}</>;
+  };
+  useEffect(() => {
+    CheckFade = ({ children }) => {
+      if (!isOpen) return <Fade bottom>{children}</Fade>;
+      else return <>{children}</>;
+    };
+  }, [isOpen]);
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
@@ -25,21 +35,23 @@ const Header = () => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar className="justify-content-end">
               <Nav navbar className="and">
-                <NavItem>
-                  <NavLink tag={Link} to="/" className="headlink">
-                    Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} to="/about" className="headlink">
-                    About
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink tag={Link} to="/product" className="headlink">
-                    Product
-                  </NavLink>
-                </NavItem>
+                <CheckFade>
+                  <NavItem>
+                    <NavLink tag={Link} to="/" className="headlink">
+                      Home
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={Link} to="/about" className="headlink">
+                      About
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink tag={Link} to="/product" className="headlink">
+                      Product
+                    </NavLink>
+                  </NavItem>
+                </CheckFade>
               </Nav>
             </Collapse>
           </div>

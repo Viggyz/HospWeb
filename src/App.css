@@ -160,3 +160,6 @@ button.btn:hover span {
 .btn.back {
   background-color: #e84545;
 }
+.btn.back:hover {
+  background-color: #903749;
+}

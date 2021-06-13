@@ -54,7 +54,7 @@ function Homepage() {
           ></path>
         </svg>
       </div>
-      <Container>
+      <Container fluid={true}>
         <Row className="px-3 info">
           {/*Put ID here so get started button can go here*/}
           <Col sm="12" md="6" className="d1 p-2">

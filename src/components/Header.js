@@ -26,7 +26,7 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <div className="header">
+      <div>
         <Navbar color="light" expand="md" light className="fixed-top ">
           <div className="container-fluid">
             <NavbarBrand tag={Link} to="/" className="col">

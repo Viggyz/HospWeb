@@ -17,11 +17,10 @@ function App() {
   return (
     <>
       <div className="container-fluid">
-        <div className="row mt-3">
+        <div className="row">
           <Header />
         </div>
-        <div className="row pt-2 mt-5">
-          {/*Full fix this */}
+        <div className="row mt-5 pt-5">
           <ScrollToTop>
             <Switch>
               <Route exact path="/" component={Home} />

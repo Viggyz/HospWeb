@@ -34,7 +34,7 @@ const Header = () => {
             </NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar className="justify-content-end">
-              <Nav navbar className="and">
+              <Nav navbar className="navbar-custom">
                 <CheckFade>
                   <NavItem>
                     <NavLink tag={Link} to="/" className="headlink">

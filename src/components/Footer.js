@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="col-lg-6 col-sm-12 footcol">
           <h2>Contact</h2>
           <a href="mailto:viggy@doesnt.com" className="mail">
-            viggy@doesntexist.com
+            doesntexist@mail.com
           </a>
           <p>+54 1234567</p>
           <p>

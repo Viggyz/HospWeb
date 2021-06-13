@@ -1,101 +1,125 @@
-import React from "react";
+import Accordion from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
+import { Fade } from "react-reveal";
 
 function Faq() {
   return (
     <>
-      <div className="accordion" id="accordionExample">
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
-            <button
-              className="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            className="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingTwo">
-            <button
-              className="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            className="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header" id="headingThree">
-            <button
-              className="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            className="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
+      <div className="container faq p-4">
+        <div className="row">
+          <Fade top>
+            <h3 className="display-6 text-white">
+              Answers to some of your most important Q’s
+            </h3>
+            <h6 className="lead text-white">
+              There are a lot of moving pieces to this thing, so let's take it
+              one baby-step at a time.
+            </h6>
+          </Fade>
+          <Accordion defaultActiveKey="">
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="0">
+                  <h3>What are the services offered at WeCare?</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="0">
+                <Card.Body>
+                  <p>
+                    Anaesthesiology, Breast Care, Cardiology, Dermatology,
+                    Emergency, Medicine Ear, Nose, Throat, Family Medicine,
+                    Gastroenterology, General Practice and General Surgery
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="1">
+                  <h3>Is my insurance network covered at WeCare?</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="1">
+                <Card.Body>
+                  <p>
+                    We have a dedicated call centre at the hospital who would be
+                    happy to take you through understanding your Insurance
+                    provider and the network covered at the hospital.
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                  <h3>Can I request an appointment online?</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="2">
+                <Card.Body>Yes! You most certainly may</Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="3">
+                  <h3> Do you work on the weekends?</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="3">
+                <Card.Body>
+                  <p>
+                    WeCare is open for your care and needs throughout the week
+                    including Fridays.
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="4">
+                  <h3> What are the operating hours for Customer Care</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="4">
+                <Card.Body>
+                  <p>Open 24 hours all days</p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="5">
+                  <h3> Where do we contact for customer feedback</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="5">
+                <Card.Body>
+                  <p>
+                    You can also email us at{" "}
+                    <a
+                      href="mailto:doesexits@mailto.com"
+                      style={{ color: "#903749" }}
+                    >
+                      doesexits@mailto.com
+                    </a>
+                  </p>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+            <Card className="head">
+              <Card.Header className="head">
+                <Accordion.Toggle as={Card.Header} eventKey="6">
+                  <h3> How can I get a Health Card?</h3>
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="6">
+                <Card.Body>
+                  You can create Patient ID or Health Card Number by logging
+                  into our online portal.
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
         </div>
       </div>
     </>

@@ -166,12 +166,13 @@ function Homepage() {
                     </blockquote>
                   </Fade>
                 </Col>
-                <Col sm="12" md="6" className="testimg">
+                <Col sm="12" md="6" className="testimg mb-3">
                   <Fade left>
                     <i className="fas fa-feather fa-5x"></i>
                   </Fade>
                 </Col>
               </Row>
+              <hr />
               <Row className="py-5 justify-content-end">
                 <Fade right>
                   <Col sm="12" md="6" className="testimg">
@@ -194,6 +195,7 @@ function Homepage() {
                   </Fade>
                 </Col>
               </Row>
+              <hr />
               <Row className="py-5">
                 <Col sm="12" md="6">
                   <Fade left>

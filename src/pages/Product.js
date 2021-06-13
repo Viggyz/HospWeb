@@ -4,7 +4,6 @@ import {
   CardImg,
   CardBody,
   CardTitle,
-  CardText,
   Container,
   Row,
   Col,
@@ -41,10 +40,10 @@ function Product() {
           <h2 className="display-6">Some of our offerings:</h2>
         </Row>
         <Row className="row-cols-1 row-cols-md-3">
-          {chairs.map((chair) => {
+          {chairs.map((chair, index) => {
             return (
               <Col className="col-lg-3 col-sm-3 col d-flex align-items-strerch py-2">
-                <Card>
+                <Card key={index}>
                   <CardImg
                     top
                     width="100%"
@@ -55,7 +54,9 @@ function Product() {
                   />
                   <CardBody>
                     <CardTitle tag="h5">
-                      <Link className="link">{chair.name}</Link>
+                      <Link className="link" to={`/product/${chair.id}`}>
+                        {chair.name}
+                      </Link>
                     </CardTitle>
                   </CardBody>
                 </Card>

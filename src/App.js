@@ -4,6 +4,7 @@ import Home from "./pages/Homepage";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Error from "./pages/Error";
+import ProdSpec from "./pages/ProdSpec";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,12 +30,11 @@ function App() {
               <Route path="/about" component={About}>
                 <About />
               </Route>
-              <Route path="/product" component={Product}>
+              <Route exact path="/product" component={Product}>
                 <Product />
               </Route>
-              <Route path="*" component={Error}>
-                <Error />
-              </Route>
+              <Route path="/product/:id" component={ProdSpec} />
+              <Route path="*" component={Error} />
             </Switch>
           </ScrollToTop>
         </div>

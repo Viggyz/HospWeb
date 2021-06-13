@@ -13,8 +13,8 @@ export default function Footer() {
               <NavLink tag={Link} to="/" className="footlink">
                 Home
               </NavLink>
-              <NavLink tag={Link} to="/about" className="footlink">
-                About
+              <NavLink tag={Link} to="/faq" className="footlink">
+                FAQ
               </NavLink>
               <NavLink tag={Link} to="/product" className="footlink">
                 Product

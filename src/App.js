@@ -18,8 +18,7 @@ import "./App.css";
 function App() {
   let [loading, setLoad] = useState(true);
   useEffect(() => {
-    // setTimeout();
-    setLoad(!loading);
+    setTimeout(() => setLoad(!loading), 1000);
   }, []);
   if (loading) return <Loading />;
   else {

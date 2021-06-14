@@ -32,7 +32,7 @@ function Homepage() {
             </Slide>
           </Col>
           <Col sm="12" md="6" className="home my-auto mx-auto">
-            <Slide bottom>
+            <Slide right>
               <h1>Book your appointment today</h1>
               <h5 className="text-muted p-1">
                 Get your vaccine from the area nearest to you with dates

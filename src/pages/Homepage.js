@@ -58,7 +58,7 @@ function Homepage() {
         <Row className="px-3 info">
           {/*Put ID here so get started button can go here*/}
           <Col sm="12" md="6" className="d1 p-2">
-            <Fade bottom>
+            <Fade>
               <h3>Who we are</h3>
               <h1>Three decades of pioneering healthcare in the region</h1>
               <p>
@@ -134,6 +134,8 @@ function Homepage() {
                 plans, and offer financial assistance programs.
               </p>
               <Button className="text-white">View Plans</Button>
+              <br />
+              <br />
             </Fade>
           </Col>
           <Col sm="12" md="6" className="p-2">
@@ -142,8 +144,8 @@ function Homepage() {
             </Slide>
           </Col>
         </Row>
-        <Row className="pt-2 mt-2">
-          <Col className="testcol p-3">
+        <Row className="pt-5 mt-5">
+          <Col className="testcol py-5">
             <Fade top>
               <h3 className="mb-4">Testimonials</h3>
             </Fade>

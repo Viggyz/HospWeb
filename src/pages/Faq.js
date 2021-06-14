@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 function Faq() {
   return (
     <>
-      <div className="container faq p-4">
+      <div className="container faq p-5">
         <div className="row">
           <Fade top>
             <h3 className="display-6 text-white">

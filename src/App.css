@@ -181,20 +181,20 @@ button.btn:hover span {
   background-color: #e84545;
 }
 div.card-header {
-  color: #e84545;
+  color: white;
   border: none;
-  background-color: #2b2e4a;
+  background-color: #e84545;
 }
 
 div.card.head {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid;
-  color: #e84545;
-  background-color: #2b2e4a;
+  color: white;
+  background-color: #e84545;
 }
 div.card-body {
-  text-align: justify;
+  text-align: center;
 }
 
 .navbar-toggler {

@@ -53,7 +53,12 @@ function Product() {
                 className="col-lg-3 col-sm-3 col d-flex align-items-strerch py-2"
               >
                 <Fade>
-                  <Card key={index} className="h-100">
+                  <Card
+                    key={index}
+                    className="h-100 link"
+                    tag={Link}
+                    to={`/product/${chair.id}`}
+                  >
                     <CardImg
                       top
                       width="100%"
@@ -62,11 +67,7 @@ function Product() {
                       height="100%"
                     />
                     <CardBody>
-                      <CardTitle tag="h5">
-                        <Link className="link" to={`/product/${chair.id}`}>
-                          {chair.name}
-                        </Link>
-                      </CardTitle>
+                      <CardTitle tag="h5">{chair.name}</CardTitle>
                     </CardBody>
                   </Card>
                 </Fade>

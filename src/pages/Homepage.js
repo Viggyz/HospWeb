@@ -22,6 +22,7 @@ function Homepage() {
     pharms: 236,
     delay: 1000,
   });
+
   return (
     <>
       <Container fluid={true}>

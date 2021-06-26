@@ -29,7 +29,7 @@ function Homepage() {
         <Row className="pb-2">
           <Col sm="12" md="6" className="home p-2 mx-auto">
             <Fade>
-              <svg src={Main} alt="doctors" width="90%" height="90%" />
+              <img src={Main} alt="doctors" width="90%" height="90%" />
             </Fade>
           </Col>
           <Col sm="12" md="6" className="home my-auto mx-auto">

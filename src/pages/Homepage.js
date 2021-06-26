@@ -28,9 +28,9 @@ function Homepage() {
       <Container fluid={true}>
         <Row className="pb-2">
           <Col sm="12" md="6" className="home p-2 mx-auto">
-            <Slide bottom>
+            <Fade>
               <img src={Main} alt="doctors" width="90%" height="90%" />
-            </Slide>
+            </Fade>
           </Col>
           <Col sm="12" md="6" className="home my-auto mx-auto">
             <Slide right>

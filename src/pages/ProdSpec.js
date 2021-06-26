@@ -13,6 +13,7 @@ function ProdSpec(id) {
         <Button tag={Link} to="/product" className="back">
           <i class="fas fa-arrow-circle-left"></i> Back
         </Button>
+        <br />
         <h1 className="display-4">{ch.name}</h1>
         <img
           src={ch.img}

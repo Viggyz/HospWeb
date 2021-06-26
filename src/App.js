@@ -36,6 +36,7 @@ function App() {
                 <Route exact path="/product" component={Product} />
                 <Route path="/product/:id" component={ProdSpec} />
                 <Route path="*" component={Error} />
+                <Route path="/404" component={Error} />
               </Switch>
             </ScrollToTop>
           </div>

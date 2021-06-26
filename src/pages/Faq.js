@@ -1,8 +1,10 @@
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import { Fade } from "react-reveal";
+import { useState } from "react";
 
 function Faq() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <div className="container faq p-5">
@@ -18,9 +20,20 @@ function Faq() {
           </Fade>
           <Accordion defaultActiveKey="">
             <Card className="head">
-              <Card.Header className="head">
-                <Accordion.Toggle as={Card.Header} eventKey="0">
-                  <h3>What are the services offered at WeCare?</h3>
+              <Card.Header className="head" style={{ cursor: "pointer" }}>
+                <Accordion.Toggle
+                  as={Card.Header}
+                  eventKey="0"
+                  onClick={() => setOpen((open) => !open)}
+                >
+                  <h3>
+                    {open ? (
+                      <span className="fas fa-times" />
+                    ) : (
+                      <span className="fas fa-plus" />
+                    )}{" "}
+                    What are the services offered at WeCare?
+                  </h3>
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey="0">
